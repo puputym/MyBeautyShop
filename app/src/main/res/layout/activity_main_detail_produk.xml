@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainDetailProduk">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/back"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        tools:src="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/title_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/img_detail"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:paddingLeft="15dp"
+        android:text="@string/title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/harga_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_detail"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/img_detail"
+        android:padding="5dp"
+        android:text="@string/harga"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/RP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_detail"
+        android:layout_marginBottom="10dp"
+        android:text="@string/rating_produk"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/rating_detail"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RP"
+        android:layout_marginBottom="10dp"
+        android:progressTint="#ffd700"
+        android:rating="4.5" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating_detail"
+        android:layout_marginBottom="10dp"
+        android:text="@string/detail"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/desc_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:text="@string/detail"
+        android:textSize="16sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        app:menu="@menu/item_menu_navigation" />
+</RelativeLayout>

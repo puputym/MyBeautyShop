@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TheBeautyShop</string>
+    <string name="nama_produk">Nama Produk</string>
+    <string name="detail_produk">Detail Produk</string>
+    <string name="title">Title</string>
+    <string name="detail">Deskripsi Produk</string>
+    <string name="favorite">Favorite</string>
+    <string name="masukan_keranjang">Masukan Keranjang</string>
+    <string name="admin">Puput Yuniar Maulida</string>
+    <string name="Email">Puput@upi.edu</string>
+    <string name="harga">harga</string>
+    <string name="harga_produk">Harga Produk</string>
+    <string name="rating_detail">Rating Produk</string>
+    <string name="thebeautyshop">TheBeautyShop</string>
+    <string name="rating_produk">Rating Produk</string>
+</resources>

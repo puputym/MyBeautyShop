@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/btn_favorite"
+        android:title="@string/favorite"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        />
+    <item android:id="@+id/btn_keranjang"
+        android:title="@string/masukan_keranjang"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        />
+</menu>
